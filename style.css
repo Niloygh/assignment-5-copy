@@ -6,3 +6,43 @@
 .gray{
     color: #64748B;
 }
+
+.bg-green{
+    background: #00A96E;
+}
+
+.pink{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEECEC;
+    color: #EF4444;
+    width: 70px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.pink-color{
+    background-color: #FEECEC;
+    color: #EF4444;
+    border: 2px solid #FECACA;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+.yellow-color{
+    background-color: #FFF8DB;
+    color: #D97706;
+    font-weight: 600;
+    border: 2px solid #FDE68A;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+.enhancement-color{
+    background-color: #DEFCE8;
+    color: #00A96E;
+    font-weight: 600;
+    border: 1px solid #BBF7D0;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+

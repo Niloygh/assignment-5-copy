@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind or daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm px-10">
+            <div class="flex gap-3 items-center flex-1">
+                <img class="h-10" src="assets/github-logo.png" alt="">
+                <h1 class="font-bold text-xl">GitHub Issues Tracker</h1>
+            </div>
+            <div class="flex gap-2">
+                <label class="input">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input type="search" required placeholder="Search" />
+                </label>
+
+                <button class="btn bg-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <section class="card shadow-sm p-4 ">
+            <div class="flex gap-3">
+                <button id="allBtn" class="btn gray w-25">All</button>
+                <button id="openBtn" class="btn gray w-25">Open</button>
+                <button id="closedBtn" class="btn gray w-25">Closed</button>
+            </div>
+        </section>
+
+        <section class="card shadow-sm p-4 mt-7">
+            <div class="">
+                <div class="flex justify-between">
+                    <div class="flex gap-3 items-center">
+                        <!-- circle img -->
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex justify-center items-center">
+                            <img src="assets/Aperture.png" alt="">
+                        </div>
+
+                        <div class="">
+                            <h1 class="font-bold text-[24px]"><span>0</span> Issues</h1>
+                            <p>Track and manage your project issues</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 ">
+                        <div class="flex gap-1 items-center">
+                            <div class="h-4 w-4 bg-green rounded-full"></div>
+                            <p class="font-bold">Open</p>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <div class="h-4 w-4 bg-primary rounded-full"></div>
+                            <p class="font-bold">Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card section  -->
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="card bg-base-100 shadow-sm mt-10 space-y-5 p-4">
+                            <div class="flex justify-between">
+                                <img src="assets/Open-Status.png" alt="">
+                                <div class="pink">
+                                    <p>HIGH</p>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <h1 class="text-[20px] font-semibold">Fix navigation menu on mobile devices</h1>
+                                <p>The navigation menu doesn't collapse properly on mobile devices...</p>
+                            </div>
+
+                            <div class="flex gap-2 flex-wrap">
+                                <p class="pink-color">BUG</p>
+                                <p class="yellow-color">closed</p>
+                                <p class="enhancement-color">Enhancement</p>
+                            </div>
+
+                            <hr class="text-black/20">
+
+                            <div class="">
+                                <p>#1 by john_doe</p>
+                                <p>1/15/2024</p>
+                            </div>
+
+
+                            
+                       
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="js/home.js"></script>
+</body>
+
+</html>
