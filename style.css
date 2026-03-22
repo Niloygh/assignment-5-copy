@@ -17,7 +17,29 @@
     align-items: center;
     background-color: #FEECEC;
     color: #EF4444;
-    width: 70px;
+    width: 80px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.orange{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6D1;
+    color: #F59E0B;
+    width: 80px;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.silver{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEFF2;
+    color: #9CA3AF;
+    width: 80px;
     height: 20px;
     border-radius: 15px;
 }
@@ -25,6 +47,7 @@
 .pink-color{
     background-color: #FEECEC;
     color: #EF4444;
+    font-weight: 600;
     border: 2px solid #FECACA;
     padding: 0 10px;
     border-radius: 20px;

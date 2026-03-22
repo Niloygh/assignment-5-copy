@@ -56,7 +56,7 @@
 
         <section class="card shadow-sm p-4 mt-7">
             <div class="">
-                <div class="flex justify-between">
+                <div class="flex justify-between border-b border-black/20 pb-10">
                     <div class="flex gap-3 items-center">
                         <!-- circle img -->
                         <div class="w-12 h-12 rounded-full bg-primary/20 flex justify-center items-center">
@@ -64,27 +64,29 @@
                         </div>
 
                         <div class="">
-                            <h1 class="font-bold text-[24px]"><span>0</span> Issues</h1>
+                            <h1 class="font-bold text-[24px]"><span id="count">0</span> Issues</h1>
                             <p>Track and manage your project issues</p>
                         </div>
                     </div>
 
                     <div class="flex gap-5 ">
                         <div class="flex gap-1 items-center">
-                            <div class="h-4 w-4 bg-green rounded-full"></div>
-                            <p class="font-bold">Open</p>
+                            <div class="h-3 w-3 bg-green rounded-full"></div>
+                            <p class="font-semibold">Open</p>
                         </div>
                         <div class="flex gap-1 items-center">
-                            <div class="h-4 w-4 bg-primary rounded-full"></div>
-                            <p class="font-bold">Closed</p>
+                            <div class="h-3 w-3 bg-primary rounded-full"></div>
+                            <p class="font-semibold">Closed</p>
                         </div>
                     </div>
                 </div>
 
+                
+
                 <!-- card section  -->
-                    <div class="grid grid-cols-4 gap-5">
-                        <div class="card bg-base-100 shadow-sm mt-10 space-y-5 p-4">
-                            <div class="flex justify-between">
+                    <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="">
+                            <!-- <div class="flex justify-between">
                                 <img src="assets/Open-Status.png" alt="">
                                 <div class="pink">
                                     <p>HIGH</p>
@@ -107,15 +109,14 @@
                             <div class="">
                                 <p>#1 by john_doe</p>
                                 <p>1/15/2024</p>
-                            </div>
-
-
-                            
-                       
+                            </div>            -->
                     </div>
-
-            </div>
-        </section>
+                    
+                </div>
+            </section>
+            <section>
+                <img src="" alt="">
+            </section>
 
     </main>
 
