@@ -73,8 +73,11 @@ function updateTotalCount(){
     const allCard = document.querySelectorAll('#card-container .card')
 
     let sum = 0 ;
-    allCard.forEach()
-    
+    allCard.forEach(card => {
+        if(card.style.display !== 'none') sum++;
+    })
+    count.innerText = sum;
+
 }
 
 
@@ -90,6 +93,7 @@ function cardFilter(status){
             i.style.display = i.dataset.status === status ? 'block' : 'none'
         }
     })
+    updateTotalCount()
 }
 
 
@@ -157,6 +161,7 @@ function displayCard(cards) {
         `
         cardContainer.append(div)
         cardFilter(currentStatus)
+        updateTotalCount()
 
     });
 
