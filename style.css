@@ -69,3 +69,7 @@
     border-radius: 20px;
 }
 
+.bg-red{
+    background-color: #EF4444;
+    color: white;
+}

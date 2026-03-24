@@ -36,12 +36,52 @@
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input type="search" required placeholder="Search" />
+                    <input id="searchInput" type="search" required placeholder="Search" />
                 </label>
 
-                <button class="btn bg-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
+                <button id="search" class="btn bg-primary">Search</button>
 
             </div>
+        </div>
+
+        <div class="">
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+            <dialog id="modal" class="modal modal-bottom sm:modal-middle">
+                <!-- <div class="modal-box">
+                    <div class="space-y-5">
+                        <h1 class="text-2xl font-semibold">Fix broken image uploads</h1>
+                        <div class="flex items-center gap-2 space-x-4">
+                            <p class="bg-green text-white px-2 rounded-2xl">Opened</p>
+                            <ul class="flex list-disc space-x-8">
+                                <li>Opened by Fahim Ahmed</li>
+                                <li>22/02/2026</li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <p>BUG</p>
+                            <p>Help Wanted</p>
+                        </div>
+                        <p>Fix broken image uploads</p>
+                        <div class="flex gap-20 bg-black/10">
+                            <div class="">
+                                <p>Assignee:</p>
+                                <p class="font-semibold">Fahim Ahmed</p>
+                            </div>
+                            <div class="">
+                                <p>Priority:</p>
+                                <p class="bg-red px-2 rounded-2xl">High</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <!-- <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div> --> 
+            </dialog>
         </div>
     </header>
 
@@ -81,12 +121,12 @@
                     </div>
                 </div>
 
-                
+
 
                 <!-- card section  -->
-                    <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                        <div class="">
-                            <!-- <div class="flex justify-between">
+                <div id="card-container" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="">
+                        <!-- <div class="flex justify-between">
                                 <img src="assets/Open-Status.png" alt="">
                                 <div class="pink">
                                     <p>HIGH</p>
@@ -111,14 +151,16 @@
                                 <p>1/15/2024</p>
                             </div>            -->
                     </div>
-                    
+
                 </div>
-            </section>
-            <section>
-                <img src="" alt="">
-            </section>
+        </section>
+        <div id="spinner" class="flex justify-center items-center hidden">
+            <span class="loading loading-spinner text-warning"></span>
+        </div>
+
 
     </main>
+
 
 
     <script src="js/home.js"></script>
